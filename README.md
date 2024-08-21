@@ -11,13 +11,13 @@ Este projeto é um site dedicado ao jogo de fantasy football **Cartola FC**. O o
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5** 
-- **CSS3** 
-- **JavaScript** 
-- **React** 
-- **Node.js** 
-- **Express** 
-- **MongoDB**
+- **HTML5** - <img align="center" alt="HTML 5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+- **CSS3** - <img align="center" alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+- **JavaScript** - <img align="center" alt="JavaScript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+- **React** - <img align="center" alt="React" src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+- **Node.js** - <img align="center" alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+- **Express** - <img align="center" alt="Express" src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+- **MongoDB** - <img align="center" alt="MongoDB" src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
 
 ## 🎨 Features
 
