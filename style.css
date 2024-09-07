@@ -1,132 +1,176 @@
 /* Define a aparência geral do corpo da página */
 body {
     font-family: Arial, sans-serif;
-    /* Define a fonte do texto */
     margin: 0;
-    /* Remove a margem padrão */
     padding: 0;
-    /* Remove o preenchimento padrão */
-    background-color: #f7f9fc;
-    /* Define a cor de fundo */
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Define a aparência do cabeçalho */
+/* Define a aparência do cabeçalho e navegação */
 header {
-    background-color: black;
-    /* Define a cor de fundo do cabeçalho */
+    background-color: #333;
+    color: white;
     padding: 1em 0;
-    /* Define o preenchimento superior e inferior do cabeçalho */
-    text-align: center;
-    /* Centraliza o texto no cabeçalho */
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/* Remove o estilo padrão das listas não ordenadas dentro da navegação */
 nav ul {
     list-style-type: none;
-    /* Remove os marcadores das listas */
+    margin: 0;
     padding: 0;
-    /* Remove o preenchimento padrão */
+    display: flex;
+    justify-content: center;
 }
 
-/* Define a aparência dos itens da lista dentro da navegação */
 nav ul li {
-    display: inline;
-    /* Exibe os itens da lista em linha */
     margin: 0 1em;
-    /* Define a margem lateral entre os itens da lista */
 }
 
-/* Define a aparência dos links dentro dos itens da lista na navegação */
 nav ul li a {
+    color: white;
     text-decoration: none;
-    /* Remove a sublinha dos links */
-    color: #ff6f61;
-    /* Define a cor do texto dos links */
     font-weight: bold;
-    /* Define o peso da fonte como negrito */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Define a aparência das seções */
 section {
     padding: 2em;
-    /* Define o preenchimento ao redor da seção */
     text-align: center;
-    /* Centraliza o texto dentro da seção */
 }
 
-/* Define a aparência do contêiner de vídeo */
-.video-container {
-    margin: 0 auto;
-    /* Centraliza o contêiner de vídeo horizontalmente */
-    max-width: 800px;
-    /* Define a largura máxima do contêiner de vídeo */
+section h1, section h2 {
+    color: #444;
 }
 
-/* Define a aparência do iframe dentro do contêiner de vídeo */
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+    color: orange;
+}
+
+/* Estilo para o contêiner dos vídeos */
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; /* Espaçamento entre os vídeos */
+    justify-content: space-between; /* Distribui os vídeos de forma igual */
+}
+
+.video-item {
+    flex: 1 1 calc(33.333% - 1em); /* Ajusta o tamanho dos vídeos para caberem em 3 colunas */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
 .video-container iframe {
-    width: 100%;
-    /* Define a largura do iframe para ocupar 100% do contêiner */
-    height: 450px;
-    /* Define a altura do iframe */
+    width: 100%; /* Faz com que o iframe ocupe toda a largura disponível do contêiner */
+    height: auto; /* Mantém a proporção do iframe */
 }
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .video-item {
+        flex: 1 1 calc(50% - 1em); /* Ajusta para 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-item {
+        flex: 1 1 100%; /* Ajusta para 1 coluna em telas pequenas */
+    }
+}
+
 
 /* Define a aparência do contêiner de mapa */
 .map-container {
     margin: 0 auto;
-    /* Centraliza o contêiner de mapa horizontalmente */
-    max-width: 800px;
-    /* Define a largura máxima do contêiner de mapa */
+    max-width: 700px;
 }
 
-/* Define a aparência do iframe dentro do contêiner de mapa */
 .map-container iframe {
     width: 100%;
-    /* Define a largura do iframe para ocupar 100% do contêiner */
-    height: 450px;
-    /* Define a altura do iframe */
+    height: 350px;
+    border: 0;
 }
 
 /* Define a aparência das imagens */
 img {
     max-width: 100%;
-    /* Define a largura máxima da imagem como 100% do contêiner */
     height: auto;
-    /* Ajusta a altura automaticamente para manter a proporção */
     border-radius: 8px;
-    /* Define bordas arredondadas para a imagem */
+    margin: 1em 0;
+    
+/* Define a aparência do formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 50%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.7em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+}
+
+form input[type="submit"]:hover {
+    background-color: #5555559d;
 }
 
 /* Define a aparência do rodapé */
 footer {
     background-color: orange;
-    /* Define a cor de fundo do rodapé */
+    color: white;
     text-align: center;
-    /* Centraliza o texto no rodapé */
     padding: 1em 0;
-    /* Define o preenchimento superior e inferior do rodapé */
     position: relative;
-    /* Define a posição como relativa */
     width: 100%;
-    /* Define a largura do rodapé como 100% */
     bottom: 0;
-    /* Posiciona o rodapé no fundo */
 }
 
-.btn {
-    background-color: #4CAF50;
-}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 
-.btn:hover {
-    background-color: #ff6f61;
-    cursor: pointer;
+    nav ul li {
+        margin: 0.5em 0;
+    }
 }
